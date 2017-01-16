@@ -22,6 +22,6 @@ class SARoutingListener implements EventSubscriberInterface
 
     public function onRequest(GetResponseEvent $event)
     {
-        $request = $event->getRequest();
+        // $request = $event->getRequest();
     }
 }
