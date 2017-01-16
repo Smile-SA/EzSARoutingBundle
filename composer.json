@@ -1,0 +1,21 @@
+{
+  "name": "smile/ez-sarouting-bundle",
+  "type": "ezplatform-bundle",
+  "description": "Siteaccess routing for eZ Platform 6.x",
+  "license": ["MIT"],
+  "authors": [
+    {
+      "name": "Smile SA",
+      "homepage": "http://www.smile.fr/"
+    }
+  ],
+  "require": {
+    "php": "~5.6|~7.0",
+    "ezsystems/ezplatform": "^1.7",
+    "maxmind/geoip": "^1.1"
+  },
+  "autoload": {
+    "psr-0": { "Smile\\EzSARoutingBundle": "" }
+  },
+  "target-dir": "Smile/EzSARoutingBundle"
+}

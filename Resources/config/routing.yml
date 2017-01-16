@@ -1,0 +1,6 @@
+smile_sa_routing_switch:
+    path: /switch/{sa}/to/{route}
+    defaults: { _controller: smile_ez_sa_routing.controller:switchAction }
+    requirements:
+        sa: "[a-z]+"
+        route: "[a-z\/\-]+"

@@ -1,0 +1,12 @@
+parameters:
+    smile_ez_sa_routing.sa_routing_listener.class: Smile\EzSARoutingBundle\EventListener\SARoutingListener
+    smile_ez_sa_routing.controller.class: Smile\EzSARoutingBundle\Controller\SARoutingController
+
+services:
+    smile_ez_sa_routing.sa_routing_listener:
+        class: %smile_ez_sa_routing.sa_routing_listener.class%
+        tags:
+            - { name: kernel.event_subscriber }
+
+    smile_ez_sa_routing.controller:
+        class: %smile_ez_sa_routing.controller.class%
